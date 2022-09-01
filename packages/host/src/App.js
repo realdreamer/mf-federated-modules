@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Suspense } from 'react';
 import {
   BrowserRouter as Router,
   Switch,
@@ -6,11 +6,15 @@ import {
   Link,
 } from "react-router-dom";
 
+const Header = React.lazy(() => import("header/App"));
+
 export default function App() {
   return (
     <Router>
       <main>
-        Host Main Application
+        <Suspense fallback={"Header loading..."}>
+          <Header />
+        </Suspense>
         <nav>
           <ul>
             <li>
@@ -23,7 +27,7 @@ export default function App() {
         </nav>
         <section>
           <Switch>
-            <Route path="/">
+            <Route path="/" exact>
               <div>Home page</div>
             </Route>
             <Route path="/product">
