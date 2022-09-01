@@ -1,7 +1,7 @@
 {
-  "name": "@federated-modules/sidebar",
+  "name": "@federated-modules/sidepanel",
   "version": "0.0.0",
-  "description": "Sidebar module using webpack module federation",
+  "description": "Sidepanel module using webpack module federation",
   "keywords": [
     "module-federation",
     "federated-modules",

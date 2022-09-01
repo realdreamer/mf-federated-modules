@@ -28,7 +28,7 @@ module.exports = {
   },
   plugins: [
     new ModuleFederationPlugin({
-      name: "sidebar",
+      name: "sidepanel",
       filename: "remoteEntry.js",
       exposes: {
         "./App": "./src/App",
