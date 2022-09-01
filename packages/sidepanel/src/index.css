@@ -14,4 +14,5 @@
   align-items: center;
   background-color: #eee;
   border-right: 1px solid #a9a9a9;
+  flex-direction: column;
 }
