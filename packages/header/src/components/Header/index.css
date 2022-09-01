@@ -9,9 +9,17 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   border-bottom: 1px solid #dbdbdb;
+  display: flex;
+  align-items: center;
 }
 
-.header h2 {
+.header__left {
+  display: flex;
+  flex: 1;
+  align-items: center;
+}
+
+.header__left h2 {
   margin: 0;
   font-size: 32px;
   line-height: 1.2;

@@ -7,7 +7,9 @@ const Login = React.lazy(() => import("login/App"));
 export default function Header() {
   return (
     <div className="header">
-      <h2>Header</h2>
+      <div className="header__left">
+        <h2>Header</h2>
+      </div>
       <Suspense fallback="Loading Login">
         <Login />
       </Suspense>
