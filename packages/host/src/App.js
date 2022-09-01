@@ -7,6 +7,7 @@ import {
 } from "react-router-dom";
 
 const Header = React.lazy(() => import("header/App"));
+const SidePanel = React.lazy(() => import("sidepanel/App"));
 
 export default function App() {
   return (
@@ -14,6 +15,9 @@ export default function App() {
       <main>
         <Suspense fallback={"Header loading..."}>
           <Header />
+        </Suspense>
+        <Suspense fallback={"Side panel loading..."}>
+          <SidePanel />
         </Suspense>
         <nav>
           <ul>

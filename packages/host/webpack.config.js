@@ -32,6 +32,7 @@ module.exports = {
       name: "host",
       remotes: {
         header: "header@http://localhost:3001/remoteEntry.js",
+        sidepanel: "sidepanel@http://localhost:3002/remoteEntry.js",
       },
       shared: {
         react: {
