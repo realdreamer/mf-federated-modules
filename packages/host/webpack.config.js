@@ -2,6 +2,8 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 const { ModuleFederationPlugin } = require("webpack").container;
 const path = require("path");
 
+const deps = require('./package.json').dependencies;
+
 module.exports = {
   entry: "./src/index",
   mode: "development",
@@ -15,6 +17,7 @@ module.exports = {
   output: {
     publicPath: "auto",
   },
+  devtool: "eval-cheap-source-map",
   module: {
     rules: [
       {
@@ -38,10 +41,12 @@ module.exports = {
       remotes: {
         header: "header@http://localhost:3001/remoteEntry.js",
         sidepanel: "sidepanel@http://localhost:3002/remoteEntry.js",
+        product: "product@http://localhost:4001/remoteEntry.js",
       },
       shared: {
         react: {
-          singleton: true
+          singleton: true,
+          requiredVersion: deps.react,
         },
         "react-dom": {
           singleton: true
