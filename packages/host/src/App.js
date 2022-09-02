@@ -1,10 +1,11 @@
 import React, { Suspense } from 'react';
 import {
   BrowserRouter as Router,
-  Switch,
+  Routes,
   Route,
 } from "react-router-dom";
-import Navigation from './components/Navigation';
+import Home from './components/Home';
+import Product from './components/Product';
 
 import './index.css';
 
@@ -20,19 +21,13 @@ export default function App() {
         </Suspense>
         <section className="content-wrapper">
           <Suspense fallback={"Side panel loading..."}>
-            <SidePanel>
-              <Navigation />
-            </SidePanel>
+            <SidePanel />
           </Suspense>
           <article className="page-wrapper">
-            <Switch>
-              <Route path="/" exact>
-                <div>Home page</div>
-              </Route>
-              <Route path="/product">
-                <div>Product</div>
-              </Route>
-            </Switch>
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/product" element={<Product />} />
+            </Routes>
           </article>
         </section>
       </main>

@@ -38,12 +38,16 @@ module.exports = {
       remotes: {
         header: "header@http://localhost:3001/remoteEntry.js",
         sidepanel: "sidepanel@http://localhost:3002/remoteEntry.js",
+        product: "product@http://localhost:4001/remoteEntry.js",
       },
       shared: {
         react: {
           singleton: true
         },
         "react-dom": {
+          singleton: true
+        },
+        "react-router-dom": {
           singleton: true
         }
       },
