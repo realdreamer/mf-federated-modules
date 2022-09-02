@@ -1,5 +1,5 @@
 .header {
-  background: #f4f4f4;
+  background: #FFE9F8;
   min-height: 80px;
   padding: 24px;
   box-sizing: border-box;
@@ -9,10 +9,18 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   border-bottom: 1px solid #dbdbdb;
+  display: flex;
+  align-items: center;
 }
 
-.header h2 {
-  margin: 0;
-  font-size: 32px;
+.header__left {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+}
+
+.header__left h2 {
+  font-size: 2em;
   line-height: 1.2;
 }

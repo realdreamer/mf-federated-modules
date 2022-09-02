@@ -1,11 +1,13 @@
-import React from 'react';
+import React from "react";
 
-import './index.css';
+import "./index.css";
 
 export default function Header() {
   return (
     <div className="header">
-      <h2>Header</h2>
+      <div className="header__left">
+        <h2>Header</h2>
+      </div>
     </div>
   );
 }
