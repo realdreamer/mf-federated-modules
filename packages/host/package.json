@@ -29,6 +29,8 @@
     "url": "https://github.com/realdreamer/mf-federated-modules/issues"
   },
   "dependencies": {
+    "@apollo/client": "^3.6.9",
+    "graphql": "^16.6.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-router-dom": "^6.3.0"

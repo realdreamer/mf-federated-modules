@@ -11,6 +11,8 @@ import './index.css';
 
 const Header = React.lazy(() => import("header/App"));
 const SidePanel = React.lazy(() => import("sidepanel/App"));
+//
+const StarShips = React.lazy(() => import("product/StarShips"));
 
 export default function App() {
   return (
