@@ -32,7 +32,7 @@ module.exports = {
   },
   plugins: [
     new ModuleFederationPlugin({
-      name: "login",
+      name: "LoginMFE",
       filename: "remoteEntry.js",
       exposes: {
         "./App": "./src/App",

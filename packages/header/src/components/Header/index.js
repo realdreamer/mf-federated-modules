@@ -2,7 +2,7 @@ import React, { Suspense } from 'react';
 
 import './index.css';
 
-const Login = React.lazy(() => import("login/App"));
+const Login = React.lazy(() => import("LoginMFE/App"));
 
 export default function Header() {
   return (

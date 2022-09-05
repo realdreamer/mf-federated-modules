@@ -32,7 +32,7 @@ module.exports = {
   },
   plugins: [
     new ModuleFederationPlugin({
-      name: "sidepanel",
+      name: "SidepanelMFE",
       filename: "remoteEntry.js",
       exposes: {
         "./App": "./src/App",
