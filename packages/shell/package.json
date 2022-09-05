@@ -1,5 +1,5 @@
 {
-  "name": "@federated-modules/host",
+  "name": "@federated-modules/shell",
   "version": "0.0.0",
   "description": "Main application which consumes and host all federated modules using webpack module federation",
   "keywords": [
